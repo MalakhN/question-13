@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+  margin: 0;
+}
+
+/* Стили для вопроса 13 */
+.question-13 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  padding-top: 38px;
+}
+
+.question-13 h1 {
+  font-family: 'Playfair', serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #3C3C3B;
+  margin: 0 0 32px 0;
+}
+
+.question-13 .container {
+  display: flex;
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 0.8px solid #000;
+}
+
+.question-13 .container picture {
+  display: flex;
+  width: 30%;
+}
+
+.question-13 .container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.question-13 .text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #3C3C3B;
+  margin: 22px 23px;
+  flex: 1;
+}
+
+.question-13 .text-block p {
+  font-family: 'Playfair', serif;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0 0 14px 0;
+  text-align: left;
+}
+
+.question-13 .text-block p:last-child {
+  margin-bottom: 0;
+}
+
+.blue-text {
+  color: #050FD2;
+}
+
+@media (max-width: 1024px) {
+  .question-13 {
+    padding-top: 24px;
+  }
+
+  .question-13 h1 {
+    font-size: 36px;
+    margin: 0 0 22px 0;
+  }
+
+  .question-13 .container {
+    flex-direction: column;
+  }
+
+  .question-13 .container picture {
+    width: 100%;
+  }
+
+  .question-13 .text-block {
+    margin: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .question-13 .text-block {
+    margin: 10px;
+  }
+
+  .question-13 .text-block p {
+    line-height: 12px;
+  }
+}
